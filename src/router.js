@@ -34,44 +34,46 @@ export default new Router({
     // },
     {
       path: "/",
+      name: "vote",
+      component: () =>
+        import(/* webpackChunkName: "mine" */ "./views/vote.vue"),
+    },
+    {
+      path: "/teacherList",
       name: "teacherList",
       component: () =>
-        import(/* webpackChunkName: "mine" */ "./views/teacherList.vue")
+        import(/* webpackChunkName: "mine" */ "./views/teacherList.vue"),
     },
     {
       path: "/setting",
       name: "setting",
       component: () =>
-        import(/* webpackChunkName: "mine" */ "./views/setting.vue")
+        import(/* webpackChunkName: "mine" */ "./views/setting.vue"),
     },
     {
       path: "/qrCode",
       name: "qrCode",
       component: () =>
-        import(/* webpackChunkName: "mine" */ "./views/qrCode.vue")
+        import(/* webpackChunkName: "mine" */ "./views/qrCode.vue"),
     },
-    {
-      path: "/vote",
-      name: "vote",
-      component: () => import(/* webpackChunkName: "mine" */ "./views/vote.vue")
-    },
+
     {
       path: "/echart",
       name: "echart",
       component: () =>
-        import(/* webpackChunkName: "mine" */ "./views/echart.vue")
+        import(/* webpackChunkName: "mine" */ "./views/echart.vue"),
     },
     {
       path: "/login",
       name: "login",
       component: () =>
-        import(/* webpackChunkName: "mine" */ "./views/login.vue")
+        import(/* webpackChunkName: "mine" */ "./views/login.vue"),
     },
     {
       path: "/success",
       name: "success",
       component: () =>
-        import(/* webpackChunkName: "mine" */ "./views/mine/success.vue")
-    }
-  ]
+        import(/* webpackChunkName: "mine" */ "./views/mine/success.vue"),
+    },
+  ],
 });
