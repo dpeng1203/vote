@@ -38,24 +38,24 @@ export default new Router({
       component: () =>
         import(/* webpackChunkName: "mine" */ "./views/vote.vue"),
     },
-    {
-      path: "/teacherList",
-      name: "teacherList",
-      component: () =>
-        import(/* webpackChunkName: "mine" */ "./views/teacherList.vue"),
-    },
-    {
-      path: "/setting",
-      name: "setting",
-      component: () =>
-        import(/* webpackChunkName: "mine" */ "./views/setting.vue"),
-    },
-    {
-      path: "/qrCode",
-      name: "qrCode",
-      component: () =>
-        import(/* webpackChunkName: "mine" */ "./views/qrCode.vue"),
-    },
+    // {
+    //   path: "/teacherList",
+    //   name: "teacherList",
+    //   component: () =>
+    //     import(/* webpackChunkName: "mine" */ "./views/teacherList.vue"),
+    // },
+    // {
+    //   path: "/setting",
+    //   name: "setting",
+    //   component: () =>
+    //     import(/* webpackChunkName: "mine" */ "./views/setting.vue"),
+    // },
+    // {
+    //   path: "/qrCode",
+    //   name: "qrCode",
+    //   component: () =>
+    //     import(/* webpackChunkName: "mine" */ "./views/qrCode.vue"),
+    // },
 
     {
       path: "/echart",
@@ -63,17 +63,17 @@ export default new Router({
       component: () =>
         import(/* webpackChunkName: "mine" */ "./views/echart.vue"),
     },
-    {
-      path: "/login",
-      name: "login",
-      component: () =>
-        import(/* webpackChunkName: "mine" */ "./views/login.vue"),
-    },
-    {
-      path: "/success",
-      name: "success",
-      component: () =>
-        import(/* webpackChunkName: "mine" */ "./views/mine/success.vue"),
-    },
+    // {
+    //   path: "/login",
+    //   name: "login",
+    //   component: () =>
+    //     import(/* webpackChunkName: "mine" */ "./views/login.vue"),
+    // },
+    // {
+    //   path: "/success",
+    //   name: "success",
+    //   component: () =>
+    //     import(/* webpackChunkName: "mine" */ "./views/mine/success.vue"),
+    // },
   ],
 });
